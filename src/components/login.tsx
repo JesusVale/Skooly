@@ -1,8 +1,10 @@
 'use client'
 import { SkoolyLogo } from "./icons"
 import InputAuth from "./controls/input-auth"
+import AuthGoogleButton from "./controls/auth-google-button"
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import { useRouter, redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import Link from "next/link"
 
 function Login() {
 
@@ -19,12 +21,8 @@ function Login() {
       email: email as string,
       password: password as string,
     })
-    if(error){
-      console.log(error);
-    } else{
-      router.push("/")
-    }
-    
+    router.refresh();
+
   }
 
   return (
@@ -45,6 +43,18 @@ function Login() {
         <InputAuth type="password" name="password" placeholder="Contraseña" />
         <button className="bg-[#3F5259] p-2 text-white transition hover:cursor-pointer hover:bg-[#39494f]">Ingresar</button>
       </form>
+
+      <div className="flex items-center my-6">
+        <hr className="h-0 border-b border-solid grow opacity-45" />
+        <p className="mx-4 text-white">o</p>
+        <hr className="h-0 border-b border-solid grow opacity-45" />
+      </div>
+
+      <AuthGoogleButton />
+
+      <p className="text-white mt-6">
+        ¿No tienes cuenta? <Link className="text-blue-600 hover:underline" href="/signup">Registrate</Link>
+      </p>
 
     </div>
     

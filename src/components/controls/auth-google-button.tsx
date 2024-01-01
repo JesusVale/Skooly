@@ -16,7 +16,7 @@ function AuthGoogleButton() {
   }
 
   return (
-    <button onClick={signInGoogle} className="flex items-center gap-5 bg-white py-[0.6rem] text-black font-medium px-4 rounded-full hover:bg-gray-200">
+    <button onClick={signInGoogle} className="flex items-center gap-5 bg-white py-[0.6rem] text-black font-medium px-4 rounded-full hover:bg-gray-200 w-full">
         <GoogleIcon width="25" height="25" /> Iniciar Sesión con Google
     </button>
   )

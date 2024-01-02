@@ -4,6 +4,14 @@
 
 @layer utilities {
     input[name="typeUser"]:checked + .type-selector{
-        @apply bg-slate-700 text-white
+        @apply bg-slate-700 text-white;
+    }
+
+    .border-all-white{
+        @apply border border-white border-solid;
+    }
+
+    .hover-primary {
+        @apply transition-[background-color] duration-300 hover:bg-hover-primary cursor-pointer
     }
 }

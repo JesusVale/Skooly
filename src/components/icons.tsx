@@ -46,3 +46,11 @@ export function StudentIcon({width, height}: Props){
         </svg>
     )
 }
+
+export function PlusIcon({width, height}: Props){
+    return (
+        <svg data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="3.75 3.75 16.5 16.5" width={width} height={height}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path> 
+        </svg>
+    )
+}

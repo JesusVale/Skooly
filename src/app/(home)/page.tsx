@@ -14,8 +14,8 @@ export default async function Home({children}: {children: React.ReactNode}) {
   }
 
   return (
-    <main className="text-white">
-      <MainNavbar />
-    </main>
+    <>
+      
+    </>
   )
 }

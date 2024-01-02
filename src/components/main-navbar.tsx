@@ -9,7 +9,7 @@ function MainNavbar() {
   const [showOptions, setShowOptions] = useState(false);
 
   return (
-    <header>
+    <header className="text-white">
         <nav className="flex justify-between items-center py-4 px-10 border-b border-light-white border-solid">
             <Link href="/">
                 <SkoolyLogo width="140" height="35" />

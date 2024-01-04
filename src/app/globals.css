@@ -15,3 +15,23 @@
         @apply transition-[background-color] duration-300 hover:bg-hover-primary cursor-pointer
     }
 }
+
+.light-blue{
+    background-color: #3937b2;
+}
+
+.green{
+    background-color: #027a0e;
+}
+
+.orange{
+    background-color: #FFA500;
+}
+
+.pink {
+    background-color: #92086d;
+}
+
+.purple {
+    background-color: #800080;
+}

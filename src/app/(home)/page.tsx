@@ -2,8 +2,6 @@ import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers"
 
-import MainNavbar from "@/components/main-navbar";
-
 export default async function Home({children}: {children: React.ReactNode}) {
 
   const supabase = createServerComponentClient({ cookies });

@@ -11,9 +11,18 @@
         @apply border border-white border-solid;
     }
 
+    .border-all-light-white{
+        @apply border border-light-white border-solid;
+    }
+
     .hover-primary {
         @apply transition-[background-color] duration-300 hover:bg-hover-primary cursor-pointer
     }
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 25%));
 }
 
 .light-blue{

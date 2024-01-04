@@ -9,7 +9,7 @@ export default async function Home({children}: {children: React.ReactNode}) {
       <MainNavbar />
       <div className="flex-1 flex">
         <Sidebar />
-        <main>
+        <main className='p-8 w-full'>
           {children}
         </main>
       </div>

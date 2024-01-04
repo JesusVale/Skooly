@@ -1,4 +1,4 @@
-import { type UserIdentity } from "@supabase/supabase-js";
+import { type UUID } from "crypto";
 import { colorsCourses } from "../constants";
 
 export type ColorsCourses = typeof colorsCourses[number]; 
@@ -9,5 +9,13 @@ export type Course = {
     name: string,
     description: string,
     color: ColorsCourses,
-    teacher: string
+    teacher: string | Profile
+}
+
+export type Profile = {
+    id: UUID,
+    type: "teacher" | "student",
+    last_name: string,
+    created_at: Date,
+    first_name: string
 }

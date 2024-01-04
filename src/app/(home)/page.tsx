@@ -1,6 +1,7 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers"
+import Courses from "@/components/courses";
 
 export default async function Home({children}: {children: React.ReactNode}) {
 
@@ -13,7 +14,7 @@ export default async function Home({children}: {children: React.ReactNode}) {
 
   return (
     <>
-      
+      <Courses />
     </>
   )
 }

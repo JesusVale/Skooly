@@ -12,9 +12,9 @@ function AuthHeader({ title }: Props) {
           <div className="flex justify-center">
             <SkoolyLogo width="300" height="90" />
           </div>
-          <p className="font-semibold text-center">Construyendo puentes hacia el conocimiento</p>
+          <p className="font-semibold text-center max-[490px]:text-sm">Construyendo puentes hacia el conocimiento</p>
         </div>
-        <h1 className="text-white font-bold text-2xl py-5 text-center">{title}</h1>
+        <h1 className="text-white font-bold text-2xl py-5 text-center max-[490px]:text-lg">{title}</h1>
         
       </header>
   )

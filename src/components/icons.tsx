@@ -6,7 +6,7 @@ type Props = {
 
 export function SkoolyLogo({width, height}: Props){
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="8.53 3.75 760.58 138.56" width={width} height={height}>
+        <svg className="max-[340px]:w-full" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="8.53 3.75 760.58 138.56" width={width} height={height}>
             <path fill="currentColor" d="   M 375.56 60.24   L 403.45 33.09   A 0.32 0.32 0.0 0 1 403.67 33.00   L 435.74 33.00   A 0.32 0.32 0.0 0 1 435.97 33.54   L 403.70 66.80   A 0.32 0.32 0.0 0 0 403.68 67.22   L 438.88 111.98   A 0.32 0.32 0.0 0 1 438.63 112.50   L 405.72 112.50   A 0.32 0.32 0.0 0 1 405.47 112.38   L 383.51 85.03   A 0.32 0.32 0.0 0 0 383.04 85.00   L 375.11 92.97   A 0.32 0.32 0.0 0 0 375.02 93.19   L 375.02 112.18   A 0.32 0.32 0.0 0 1 374.70 112.50   L 347.53 112.50   A 0.32 0.32 0.0 0 1 347.21 112.18   L 347.21 4.07   A 0.32 0.32 0.0 0 1 347.53 3.75   L 374.70 3.75   A 0.32 0.32 0.0 0 1 375.02 4.07   L 375.02 60.01   A 0.32 0.32 0.0 0 0 375.56 60.24   Z"/>
             <rect fill="currentColor" x="639.74" y="3.76" width="27.84" height="108.74" rx="0.33"/>
             <path fill="currentColor" d="   M 31.60 55.69   Q 31.43 56.02 31.43 56.39   Q 31.51 88.00 31.48 118.37   A 0.52 0.51 0.0 0 1 30.96 118.88   L 9.13 118.91   A 0.59 0.59 0.0 0 1 8.54 118.32   L 8.53 96.56   A 0.51 0.51 0.0 0 1 9.04 96.05   Q 14.89 96.01 21.16 96.07   Q 21.60 96.08 21.89 95.78   Q 22.33 95.33 22.05 94.77   Q 21.87 94.43 21.87 94.04   L 22.03 50.60   A 1.18 1.18 0.0 0 0 21.39 49.55   Q 15.77 46.57 10.28 43.79   Q 9.89 43.59 9.71 43.19   A 0.46 0.46 0.0 0 1 9.91 42.60   L 80.78 4.59   A 1.72 1.72 0.0 0 1 82.38 4.59   L 153.42 42.72   A 0.36 0.36 0.0 0 1 153.42 43.36   L 82.55 81.38   A 2.04 2.02 44.7 0 1 80.64 81.38   L 32.29 55.47   A 0.51 0.51 0.0 0 0 31.60 55.69   Z"/>
@@ -123,6 +123,15 @@ export function UsersIcon({width, height}: Props){
     return (
         <svg width={width} height={height} data-slot="icon" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"></path>
+        </svg>
+    )
+}
+
+export function MenuIcon({width, height}: Props){
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} className="icon icon-tabler icon-tabler-menu-2" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="3.25 5.25 17.5 13.5">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>   <path d="M4 6l16 0"></path>   <path d="M4 12l16 0"></path>   
+            <path d="M4 18l16 0"></path> 
         </svg>
     )
 }
